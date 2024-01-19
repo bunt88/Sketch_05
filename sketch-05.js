@@ -9,7 +9,7 @@ let manager;
 
 let text = 'G';
 let fontSize = 1200;
-let fontFamily = 'sans-serif';
+let fontFamily = 'Comic Sans';
 // let fontStyle = 'normal';
 // let fontWeight = 'normal';
 
@@ -107,9 +107,9 @@ const sketch = ({ context, width, height }) => {
 
 const getGlyph = (v) => {
   if (v < 50) return '';
-  if (v < 100) return '.';
-  if (v < 150) return '-';
-  if (v < 200) return '+';
+  if (v < 100) return 'C';
+  if (v < 150) return 'T';
+  if (v < 200) return 'B';
 
   const glyphs = '_= /'.split('');
 
